@@ -1,3 +1,4 @@
+#Задание
 import math
 def find_exponent(N):
     if N <= 0 or (N & (N - 1)) != 0:
