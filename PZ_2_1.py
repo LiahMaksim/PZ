@@ -8,5 +8,5 @@ try:
     b = (number // 10) % 10
     print(f"Последняя цифра: {a}")
     print(f"Средняя цифра: {b}")
-except ValueError as p:
-    print("Ошиька ввода: {p}")
+except ValueError:
+    print("Ошиька ввода: Должно быть трехзначное число.")
