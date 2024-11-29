@@ -2,11 +2,10 @@
 
 try:
     number = int(input("Введите трехзначное число: "))
-    if number < 100 or number > 999:
-        raise ValueError("Число должно быть трехзначным.")
-    a = number % 10
-    b = (number // 10) % 10
-    print(f"Последняя цифра: {a}")
-    print(f"Средняя цифра: {b}")
+    if 999 > number > 100:
+        a = number % 10
+        b = (number // 10) % 10
+        print(f"Последняя цифра: {a}")
+        print(f"Средняя цифра: {b}")
 except ValueError:
     print("Ошиька ввода: Должно быть трехзначное число.")
