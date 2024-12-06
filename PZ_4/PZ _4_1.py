@@ -8,7 +8,7 @@ def sum_series(A, N):
         current_term *= A
     return total_sum
 try:
-    A = float(input("Введите вещественное число A: "))
+    A = int(input("Введите вещественное число A: "))
     N = int(input("Введите целое число N (>0): "))
     if N > 0:
         result = sum_series(A, N)
