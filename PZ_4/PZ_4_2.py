@@ -10,5 +10,5 @@ try:
     N = int(input("Введите целое число N (>0), являющееся двойки: "))
     K = find_exponent(N)
     print(f"K ={K}")
-except ValueError as e:
-    print(e)
+except ValueError:
+    print()
