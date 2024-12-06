@@ -18,5 +18,5 @@ try:
     B = int(input("Введите длину стороны B (натуральное число): "))
     result = cut_rectangle_into_squares(A, B)
     print(f"Количество квадратов, на которое можно разрезать прямоугольник: {result}")
-except ValueError as e:
-    print(e)
+except ValueError:
+    print()
