@@ -10,7 +10,10 @@ def front(x, y):
         return 1
     else:
         return 3
-x = int(input("Введите координату x: "))
-y = int(input("Введите координату y: "))
-result = front(x, y)
-print(result)
+try:
+    x = int(input("Введите координату x: "))
+    y = int(input("Введите координату y: "))
+    result = front(x, y)
+    print(result)
+except ValueError:
+    print("Ошибка: Пожалуйста, введите корректные целые числа для координат.")
