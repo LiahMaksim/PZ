@@ -1,6 +1,6 @@
 #Составить функцию, которая выведет на экран строку, содержащую задаваемое с клавиатуры число символов.
 
-def print_custom_string():
+def front():
     try:
         fan = int(input("Введите количество символов: "))
         if fan <= 0:
@@ -10,4 +10,4 @@ def print_custom_string():
         print(result_string)
     except ValueError:
         print("Пожалуйста, введите целое число.")
-print_custom_string()
+front()
