@@ -1,6 +1,6 @@
 #Дан список A размера N. Вывести его элементы в следующем порядке: A1, AN, A2, AN-1, A3, AN-2, ….
 
-def rearrange_list(A):
+def front(A):
     N = len(A)
     result = []
     for i in range((N + 1) // 2):
@@ -10,4 +10,4 @@ def rearrange_list(A):
     return result
 
 A = [1, 2, 3, 4, 5, 6, 7, 8]
-print(rearrange_list(A))
+print(front(A))
